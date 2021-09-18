@@ -15,9 +15,9 @@ print('-----------------------------------')
 try:
    with conn.cursor() as cursor:
        #insert
-       query1 = """insert into person values ('sara','asadi',1016,100)"""
-       #cursor.execute(query1)
-       #conn.commit()
+       query1 = """insert into person values ('mashRahim','mahdavi',1024,256)"""
+       cursor.execute(query1)
+       conn.commit()
        #select
        query2 = "SELECT * FROM PERSON where serial > 1007 "
        cursor.execute(query2)
