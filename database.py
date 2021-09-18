@@ -1,3 +1,5 @@
+from bs4 import BeautifulSoup
+
 import psycopg2
 try:
     conn = psycopg2.connect(
@@ -15,7 +17,7 @@ print('-----------------------------------')
 try:
    with conn.cursor() as cursor:
        #insert
-       query1 = """insert into person values ('mashRahim','mahdavi',1024,256)"""
+       query1 = """insert into person values ('حسین','مشهدی',1025,290)"""
        cursor.execute(query1)
        conn.commit()
        #select
